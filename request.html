@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request a Quote | SMG Property Maintenance · Gloucestershire</title>
+  <meta name="description" content="Request a free, no-obligation quote from SMG Property Maintenance. Tell us about your job and we'll come back to you within 24 hours." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Open Graph — update og:url and og:image once domain is live -->
+  <meta property="og:type"         content="website">
+  <meta property="og:site_name"    content="SMG Property Maintenance">
+  <meta property="og:locale"       content="en_GB">
+  <meta property="og:title"        content="Request a Free Quote · SMG Property Maintenance">
+  <meta property="og:description"  content="Tell us about your job and we'll come back with a free, no-obligation quote within 24 hours. No pressure, no jargon.">
+  <meta property="og:url"          content="https://smgpropertymaintenance.co.uk/request.html">
+  <meta property="og:image"        content="https://smgpropertymaintenance.co.uk/images/og-image.jpg">
+  <meta property="og:image:width"  content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt"    content="SMG Property Maintenance — painting and decorating in Gloucestershire">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style-honey.css" />
+</head>
+<body>
+
+  <!-- ============ FLUID ISLAND NAV ============ -->
+  <nav class="island" aria-label="Primary">
+    <a class="island__logo" href="index-honey.html" aria-label="SMG Property Maintenance home">
+      <img src="images/logo.png" alt="" onerror="this.style.display='none'">
+      <span><b>SMG</b><small>Property Maintenance</small></span>
+    </a>
+    <div class="island__links">
+      <a href="index-honey.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a href="request.html" class="btn-pill btn-pill--clay" style="opacity:.7;pointer-events:none" aria-current="page">Request a Job
+      <span class="btn-pill__icon"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="menu" id="menu">
+    <a href="index-honey.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+    <a href="request.html">Request a Job</a>
+  </div>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow-pill">Free quote</span>
+        <h1>Tell us about<br><em>your job.</em></h1>
+        <p class="lead" style="margin-top:18px">Fill in the form and we'll come back to you within 24 hours — no pressure, no jargon, no obligation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FORM SECTION ============ -->
+  <section class="req-section">
+    <div class="wrap">
+      <div class="req-layout">
+
+        <!-- ===== FORM CARD ===== -->
+        <div class="req-form-card bezel reveal">
+          <div class="bezel__core req-form-inner">
+
+            <form id="requestForm" class="req-form"
+              name="contact" method="POST"
+              data-netlify="true" netlify-honeypot="bot-field"
+              novalidate>
+
+              <!-- Netlify Forms — processed automatically on deploy -->
+              <input type="hidden" name="form-name" value="contact">
+              <input type="text" name="bot-field" style="display:none" tabindex="-1" aria-hidden="true">
+
+              <p class="req-form__section-label">Your details</p>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="fname">Full name <span aria-hidden="true">*</span></label>
+                  <input class="form-input" type="text" id="fname" name="name"
+                    placeholder="Jane Smith" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="fphone">Phone number <span aria-hidden="true">*</span></label>
+                  <input class="form-input" type="tel" id="fphone" name="phone"
+                    placeholder="07700 900000" required autocomplete="tel">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="femail">
+                    Email address <span class="form-optional">(optional)</span>
+                  </label>
+                  <input class="form-input" type="email" id="femail" name="email"
+                    placeholder="jane@example.com" autocomplete="email">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="fpostcode">
+                    Town or postcode <span class="form-optional">(optional)</span>
+                  </label>
+                  <input class="form-input" type="text" id="fpostcode" name="postcode"
+                    placeholder="e.g. Cheltenham, GL50">
+                </div>
+              </div>
+
+              <p class="req-form__section-label" style="margin-top:4px">About the job</p>
+
+              <div class="form-group">
+                <label class="form-label" for="fservice">Type of work <span aria-hidden="true">*</span></label>
+                <select class="form-select" id="fservice" name="service" required>
+                  <option value="" disabled selected>Select a service…</option>
+                  <option value="residential">Residential painting &amp; decorating</option>
+                  <option value="commercial">Commercial painting &amp; decorating</option>
+                  <option value="household">Household maintenance</option>
+                  <option value="contract">Contract maintenance</option>
+                  <option value="unsure">Not sure — I'd like some advice</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="furgency">
+                  When do you need the work done?
+                  <span class="form-optional">(optional)</span>
+                </label>
+                <select class="form-select" id="furgency" name="urgency">
+                  <option value="" disabled selected>Select a timeframe…</option>
+                  <option value="asap">As soon as possible</option>
+                  <option value="month">Within the next month</option>
+                  <option value="3months">Within the next 3 months</option>
+                  <option value="planning">No rush — just planning ahead</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="fdesc">
+                  Tell us about the job <span aria-hidden="true">*</span>
+                </label>
+                <textarea class="form-textarea" id="fdesc" name="description" rows="5"
+                  placeholder="Describe what you need — e.g. painting two bedrooms and a hallway, walls and woodwork, interior only. Any details about access, timing or specific requirements are helpful." required></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">
+                  Photos <span class="form-optional">(optional)</span>
+                </label>
+                <div class="form-file-wrap">
+                  <label for="fphotos" class="form-file-btn">
+                    <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                    Choose photos
+                  </label>
+                  <span class="form-file-name" id="fileSelected">No file chosen</span>
+                  <input type="file" id="fphotos" name="photos" class="form-file-hidden"
+                    accept="image/*" multiple>
+                </div>
+                <p class="form-hint">Attach photos of the area or work needed — they'll be included with your request.</p>
+              </div>
+
+              <p class="form-privacy">By submitting this form you agree to us contacting you about your enquiry. We don't share your details with anyone else.</p>
+
+              <button type="submit" class="form-submit btn-pill btn-pill--clay">
+                Send request
+                <span class="btn-pill__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </button>
+
+            </form>
+
+            <!-- Success state (shown after successful submission) -->
+            <div id="formSuccess" class="form-state form-state--ok" hidden>
+              <div class="form-state__icon">
+                <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <h2>Request sent!</h2>
+              <p>Thanks — we've received your message and will be in touch within 24 hours to talk through the job.</p>
+              <p>If you'd like to follow up, call <a href="tel:07926782748">07926&nbsp;782748</a> or message us on <a href="https://wa.me/447926782748" target="_blank" rel="noopener">WhatsApp</a>.</p>
+            </div>
+
+            <!-- Error state (shown if submission fails) -->
+            <div id="formError" class="form-state form-state--err" hidden>
+              <p>Something went wrong — please try again, or get in touch directly on <a href="tel:07926782748">07926&nbsp;782748</a> or via <a href="https://wa.me/447926782748" target="_blank" rel="noopener">WhatsApp</a>.</p>
+            </div>
+
+          </div>
+        </div><!-- /.req-form-card -->
+
+        <!-- ===== SIDEBAR ===== -->
+        <aside class="req-sidebar reveal" style="--d:120ms">
+
+          <div class="req-sidebar__block">
+            <span class="req-sidebar__label">Or get in touch directly</span>
+            <a class="req-contact-link" href="tel:01452549675">
+              <span class="req-contact-link__icon">
+                <svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+              </span>
+              <span>01452 549675</span>
+            </a>
+            <a class="req-contact-link" href="tel:07926782748">
+              <span class="req-contact-link__icon">
+                <svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><line x1="11" y1="18" x2="13" y2="18"/></svg>
+              </span>
+              <span>07926 782748</span>
+            </a>
+            <a class="req-contact-link req-contact-link--wa"
+              href="https://wa.me/447926782748?text=Hello%20SMG%2C%20I%27d%20like%20to%20request%20a%20quote"
+              target="_blank" rel="noopener">
+              <span class="req-contact-link__icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.3A10 10 0 1 0 12 2Zm4.4 14c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3c-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1Z"/></svg>
+              </span>
+              <span>Message on WhatsApp</span>
+            </a>
+          </div>
+
+          <div class="req-sidebar__block">
+            <span class="req-sidebar__label">What happens next</span>
+            <ol class="req-steps">
+              <li class="req-step">
+                <span class="req-step__n">01</span>
+                <div>
+                  <strong>We review your request</strong>
+                  <p>We read every enquiry carefully — usually within 24 hours.</p>
+                </div>
+              </li>
+              <li class="req-step">
+                <span class="req-step__n">02</span>
+                <div>
+                  <strong>We'll be in touch</strong>
+                  <p>A quick call or message to confirm the details and arrange a visit.</p>
+                </div>
+              </li>
+              <li class="req-step">
+                <span class="req-step__n">03</span>
+                <div>
+                  <strong>Free quote, no pressure</strong>
+                  <p>We visit the job, assess what's needed and give you a clear, itemised quote — no obligation.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="req-sidebar__block req-sidebar__trust">
+            <div class="req-trust-item">
+              <svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 10 4.6-1.5 8-5 8-10V5l-8-3Z"/><path d="M9 12l2 2 4-4"/></svg>
+              <span>Fully insured on every job</span>
+            </div>
+            <div class="req-trust-item">
+              <svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>
+              <span>Free, no-obligation quotes</span>
+            </div>
+            <div class="req-trust-item">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <span>Response within 24 hours</span>
+            </div>
+          </div>
+
+        </aside><!-- /.req-sidebar -->
+
+      </div><!-- /.req-layout -->
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer-h">
+    <div class="wrap">
+      <div class="footer-h__grid">
+        <div class="footer-h__brand">
+          <b>SMG</b>
+          <p>Warm, trusted painting, decorating and property maintenance across Gloucestershire. Beautiful results, first time, every time.</p>
+          <div class="footer-h__social">
+            <a href="#" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.5V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12Z"/></svg></a>
+            <a href="https://wa.me/447926782748" aria-label="WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20Zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3c-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1Z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="request.html">Request a Job</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in Touch</h4>
+          <ul>
+            <li><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg><a href="tel:01452549675">01452 549675</a></li>
+            <li><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><line x1="11" y1="18" x2="13" y2="18"/></svg><a href="tel:07926782748">07926 782748</a></li>
+            <li><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg><a href="mailto:info@smgpropertymaintenance.co.uk">info@smgpropertymaintenance.co.uk</a></li>
+            <li><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Gloucestershire, UK</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-h__bar">© <span id="yr"></span> SMG Property Maintenance. All rights reserved.</div>
+  </footer>
+
+  <!-- ============ WHATSAPP FAB ============ -->
+  <a class="whatsapp-fab" href="https://wa.me/447926782748?text=Hello%20SMG%2C%20I%27d%20like%20to%20enquire%20about%20your%20services" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20Zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3c-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1Z"/></svg>
+  </a>
+
+  <script src="js/main-honey.js"></script>
+</body>
+</html>
