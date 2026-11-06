@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', function () {
       submitBtn.disabled = true;
       submitBtn.innerHTML = 'Sending… <span class="btn-pill__icon" aria-hidden="true"><svg viewBox="0 0 24 24" style="animation:spin .8s linear infinite"><path d="M12 2a10 10 0 0 1 10 10" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg></span>';
 
-      fetch(window.location.pathname, {
+      fetch('/', {
         method: 'POST',
         body: new FormData(form)
       })
